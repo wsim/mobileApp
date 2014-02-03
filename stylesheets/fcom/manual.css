@@ -1,0 +1,770 @@
+/* '*' is required because the tables kill font size inheritance */
+* {
+    FONT-SIZE: 12pt;
+}
+BODY
+{
+    FONT-FAMILY: Verdana,sans-serif;
+    MARGIN: 2 5 5 5;
+    PADDING: 0 0 0 0;
+    FONT-SIZE: 10pt;
+}
+LI
+{
+    DISPLAY: block;
+    MARGIN-BOTTOM: 6pt;
+    MARGIN-TOP: 6pt;
+}
+P
+{
+    DISPLAY: block;
+    MARGIN-BOTTOM: 6pt;
+    MARGIN-TOP: 0pt;
+}
+UL
+{
+    DISPLAY: block;
+    MARGIN-BOTTOM: 6pt;
+    MARGIN-TOP: 6pt;
+}
+OL
+{
+    DISPLAY: block;
+    MARGIN-BOTTOM: 6pt;
+    MARGIN-TOP: 6pt;
+}
+PRE
+{
+    DISPLAY: block;
+    MARGIN-BOTTOM: 0pt;
+    MARGIN-TOP: 0pt;
+    WHITE-SPACE: pre;
+}
+A
+{
+    COLOR: blue;
+    TEXT-DECORATION: underline;
+}
+A:visited
+{
+    COLOR: blue;
+}
+A:hover
+{
+    BACKGROUND: lightgrey;
+    COLOR: purple;
+}
+
+BR.ForceBreak
+{
+    FONT-SIZE: 0pt;
+}
+
+SPAN
+{
+    DISPLAY: inline;
+}
+
+SPAN.TaskInfo, SPAN.RevInfo
+{
+    FONT-SIZE: xx-small;
+}
+
+SPAN.tr-highlight
+{
+    BACKGROUND: #FFFF99;
+    COLOR: black;
+}
+
+SPAN.rev-reverse
+{
+    BACKGROUND: #FF66FF;
+    COLOR: white;
+}
+
+SPAN.rev
+{
+    BACKGROUND: red;
+    COLOR: white;
+    FONT-FAMILY: Verdana,sans-serif;
+    FONT-SIZE: xx-small;
+}
+
+SPAN.rev-marker
+{
+    BACKGROUND: #000000;
+    COLOR: white;
+    FONT-SIZE: xx-small;
+}
+
+SPAN.rev-highlight
+{
+    COLOR: #000000;
+    FONT-SIZE: 100%;
+}
+
+SPAN.print-rev-highlight
+{
+    COLOR: black;
+}
+
+SPAN.print-rev-highlight-se
+{
+    COLOR: black;
+	FONT-SIZE: 9pt;
+}
+
+
+SPAN.rev-highlight-se
+{
+    COLOR: #FF00FF;
+    FONT-SIZE: 9pt;
+}
+
+SPAN.coc-marker
+{
+    BACKGROUND: #6633FF;
+    COLOR: white;
+    FONT-SIZE: xx-small;
+}
+
+SPAN.coc-highlight
+{
+    COLOR: #6633FF;
+    FONT-SIZE: 100%;
+}
+
+SPAN.print-coc-highlight
+{
+    COLOR: black;
+}
+
+SPAN.print-coc-highlight-se
+{
+    COLOR: black;
+    FONT-SIZE: 9pt;
+}
+
+SPAN.coc-highlight-se
+{
+    COLOR: #6633FF;
+    FONT-SIZE: 9pt;
+}
+
+SPAN#revbar
+{
+    FONT-FAMILY: Courier New;
+    LEFT: 20px;
+    PADDING-RIGHT: 1pt;
+    POSITION: absolute;
+}
+SPAN#cocbar
+{
+    FONT-FAMILY: Courier New;
+    LEFT: 30px;
+    PADDING-RIGHT: 1pt;
+    POSITION: absolute;
+}
+SPAN.Item
+{
+    DISPLAY: block;
+    MARGIN-TOP: -1pt;
+    MARGIN-BOTTOM: 0pt;
+    FONT-WEIGHT: bold;
+    COLOR: gray;
+}
+
+SPAN.Effectivity
+{
+    BACKGROUND: #FFFFFF;
+}
+
+TABLE.Item
+{
+    BORDER-COLLAPSE: collapse;
+    BORDER-COLOR: gray;
+    BORDER-STYLE: solid;
+    BORDER-WIDTH: 1pt;
+
+    PADDING-TOP: 0pt;
+    PADDING-BOTTOM: 5pt;
+    MARGIN-TOP: 0pt;
+    MARGIN-BOTTOM: 0pt;
+}
+
+TD.Item
+{
+    PADDING-TOP: 0pt;
+    PADDING-BOTTOM: 5pt;
+    MARGIN-TOP: 0pt;
+    MARGIN-BOTTOM: 0pt;
+
+    BORDER-RIGHT: solid 1pt #D3D3D3;
+    BORDER-BOTTOM: solid 1pt gray;
+}
+
+TD.Item-right
+{
+    PADDING-TOP: 0pt;
+    PADDING-BOTTOM: 5pt;
+    MARGIN-TOP: 0pt;
+    MARGIN-BOTTOM: 0pt;
+
+    BORDER-RIGHT: solid 1pt #D3D3D3;
+}
+
+
+THEAD
+{
+	DISPLAY: table-header-group;
+}
+TFOOT
+{
+	DISPLAY: table-footer-group;
+}
+
+
+TABLE
+{
+    DISPLAY: block;
+    MARGIN-BOTTOM: 6pt;
+    MARGIN-TOP: 12pt;
+    EMPTY-CELLS: show;
+}
+
+TABLE.all, TABLE.none, TABLE.sides, TABLE.topbot, TABLE.top, TABLE.bottom
+{
+    BACKGROUND: white;
+    BORDER-COLLAPSE: collapse;
+    BORDER-COLOR: gray;
+    BORDER-STYLE: solid;
+    BORDER-WIDTH: 1.5pt;
+    PADDING: 3pt;
+}
+
+TABLE.none
+{
+    BACKGROUND: none;
+    BORDER: none;
+}
+
+TABLE.sides {
+    BORDER-BOTTOM: none;
+    BORDER-TOP: none;
+}
+
+TABLE.top
+{
+    BORDER-LEFT: none;
+    BORDER-RIGHT: none;
+    BORDER-BOTTOM: none;
+}
+TABLE.bottom
+{
+    BORDER-LEFT: none;
+    BORDER-RIGHT: none;
+    BORDER-TOP: none;
+}
+TABLE.topbot
+{
+    BORDER-LEFT: none;
+    BORDER-RIGHT: none;
+}
+
+TABLE.warning
+{
+    FONT-WEIGHT: bold;
+    PADDING-TOP: 0pt;
+    MARGIN-TOP: 0pt;
+    TEXT-TRANSFORM: uppercase;
+    COLOR: black;
+    BACKGROUND: white;
+}
+TABLE.caution
+{
+    FONT-WEIGHT: bold;
+    PADDING-TOP: 0pt;
+    MARGIN-TOP: 0pt;
+    TEXT-TRANSFORM: uppercase;
+    COLOR: black;
+    BACKGROUND: white;
+}
+TABLE.note
+{
+    FONT-WEIGHT: bold;
+    PADDING-TOP: 0pt;
+    MARGIN-TOP: 0pt;
+    TEXT-TRANSFORM: none;
+    COLOR: black;
+    BACKGROUND: white;
+}
+
+TABLE.COC-REV
+{
+    BORDER-LEFT-WIDTH: thin;
+    border-left-style: DOTTED;
+    border-left-color: black;
+    MARGIN-TOP: -6pt;
+}
+
+TABLE.OEM-REV
+{
+    BORDER-LEFT-WIDTH: thin;
+    border-left-style: SOLID;
+    border-left-color: black;
+    MARGIN-TOP: -6pt;
+}
+
+TABLE.TR-REV
+{
+    BORDER-LEFT-WIDTH: 2pt;
+    border-left-style: SOLID;
+    border-left-color: black;
+    MARGIN-TOP: -6pt;
+}
+
+TH, TD
+{
+    PADDING-BOTTOM: 3pt;
+    PADDING-LEFT: 3pt;
+    PADDING-RIGHT: 3pt;
+    PADDING-TOP: 3pt;
+    BORDER: none;
+}
+
+TD.none
+{
+    PADDING-BOTTOM: 0pt;
+    PADDING-LEFT: 3pt;
+    PADDING-RIGHT: 3pt;
+    PADDING-TOP: 12pt;
+    BORDER: none;
+}
+
+TH
+{
+    BACKGROUND: beige;
+}
+
+TH.thead
+{
+    BORDER-BOTTOM: solid 1pt;
+    BORDER-TOP: solid 1pt;
+}
+
+TD.line-right, TH.line-right
+{
+    BORDER-RIGHT: solid 1pt;
+}
+TD.line-under, TH.line-under
+{
+    BORDER-BOTTOM: solid 1pt;
+}
+
+/*
+ The line-both class is obsolete, but it remains for temporary backward compatibility
+ If its still here is Jan. 2005 then it can safely be removed.
+*/
+TD.line-both, TD.both, TH.line-both, TH.both
+{
+    BORDER-RIGHT: solid 1pt;
+    BORDER-BOTTOM: solid 1pt;
+}
+
+DIV.REVBARDIV
+{
+    position: absolute;
+    LEFT: 10;
+}
+
+LI.tight
+{
+    DISPLAY: block;
+    MARGIN-BOTTOM: 0pt;
+    MARGIN-TOP: 0pt;
+}
+UL.tight
+{
+    DISPLAY: block;
+    MARGIN-BOTTOM: 0pt;
+    MARGIN-TOP: 0pt;
+}
+UL.plain
+{
+    DISPLAY: block;
+    MARGIN-BOTTOM: 6pt;
+    MARGIN-TOP: 6pt;
+    LIST-STYLE-TYPE: none
+}
+OL.tight
+{
+    DISPLAY: block;
+    MARGIN-BOTTOM: 0pt;
+    MARGIN-TOP: 0pt;
+}
+TABLE.tight
+{
+    DISPLAY: block;
+    MARGIN-BOTTOM: 0pt;
+    MARGIN-TOP: 0pt;
+}
+.scrollable
+{
+    HEIGHT: 450px;
+    OVERFLOW: auto;
+}
+TABLE.SuperTight
+{
+    DISPLAY: block;
+    MARGIN-BOTTOM: -3pt;
+    MARGIN-TOP: -3pt;
+}
+TABLE.SuperSuperTight
+{
+    DISPLAY: block;
+    MARGIN-BOTTOM: -3pt;
+    MARGIN-TOP: -6pt;
+}
+TABLE.AcgmHorizontalMargins
+{
+    DISPLAY: block;
+    MARGIN-BOTTOM: -6pt;
+    MARGIN-TOP: -6pt;
+}
+*.ConflictTitle
+{
+    BACKGROUND: yellow;
+}
+
+H3.tight
+{
+    DISPLAY: block;
+    MARGIN-BOTTOM: 0pt;
+    MARGIN-TOP: 0pt;
+}
+H4.tight
+{
+    DISPLAY: block;
+    MARGIN-BOTTOM: 0pt;
+    MARGIN-TOP: 0pt;
+}
+P.tight
+{
+    DISPLAY: block;
+    MARGIN-BOTTOM: 0pt;
+    MARGIN-TOP: 0pt;
+}
+P.IndentTight
+{
+    MARGIN-BOTTOM: 0pt;
+    MARGIN-LEFT: 18pt;
+    MARGIN-TOP: 0pt;
+}
+P.toc-entry
+{
+    FONT-SIZE: xx-small;
+    MARGIN-BOTTOM: 0pt;
+    MARGIN-TOP: 2pt;
+}
+P.Task
+{
+    COLOR: black;
+    DISPLAY: block;
+    FONT-SIZE: larger;
+    FONT-WEIGHT: bold;
+    MARGIN-BOTTOM: 0pt;
+    MARGIN-TOP: 0pt;
+}
+P.FAAHeader
+{
+    COLOR: black;
+    FONT-SIZE: x-small;
+    MARGIN-BOTTOM: 0pt;
+    MARGIN-TOP: 0pt;
+}
+P.PreTopic
+{
+    DISPLAY: block;
+    MARGIN-BOTTOM: 6pt;
+    MARGIN-TOP: 6pt;
+    TEXT-DECORATION: underline;
+}
+P.Subtask
+{
+    COLOR: gray;
+    FONT-SIZE: xx-small;
+    MARGIN-BOTTOM: 0pt;
+    MARGIN-LEFT: 5pt;
+    MARGIN-TOP: 0pt;
+}
+P.PNRDataItem
+{
+    MARGIN-BOTTOM: 0pt;
+    MARGIN-TOP: 4pt;
+}
+B.FloatingEffect
+{
+    BACKGROUND: black;
+    COLOR: white;
+}
+TD.TOPICEFFECT
+{
+    COLOR: gray;
+    MARGIN-BOTTOM: 0pt;
+    MARGIN-LEFT: 5pt;
+    MARGIN-TOP: 0pt;
+    BACKGROUND: #FFFFFF;
+}
+P.Effect
+{
+    COLOR: gray;
+    MARGIN-BOTTOM: 0pt;
+    MARGIN-TOP: 0pt;
+    BACKGROUND: #FFFFFF;
+}
+.FigureTitle
+{
+    FONT-WEIGHT: bold;
+    TEXT-ALIGN: left;
+}
+DIV.FAAHeader
+{
+    BACKGROUND: LightSteelBlue;
+    BORDER-BOTTOM-COLOR: Gray;
+    BORDER-LEFT-COLOR: Gray;
+    BORDER-RIGHT-COLOR: Gray;
+    BORDER-TOP: Gray 2pt double;
+    MARGIN-BOTTOM: 0pt;
+    MARGIN-TOP: 6pt;
+    PADDING-BOTTOM: 3pt;
+    PADDING-LEFT: 3pt;
+    PADDING-RIGHT: 3pt;
+    PADDING-TOP: 3pt;
+}
+DIV.MajorSection
+{
+    BACKGROUND: LightGrey;
+    BORDER-BOTTOM: Gray 2pt double;
+    BORDER-LEFT: Gray 2pt double;
+    BORDER-RIGHT: Gray 2pt double;
+    BORDER-TOP: Gray 2pt double;
+    MARGIN-BOTTOM: 3pt;
+    MARGIN-TOP: 0pt;
+    PADDING-BOTTOM: 3pt;
+    PADDING-LEFT: 3pt;
+    PADDING-RIGHT: 3pt;
+    PADDING-TOP: 3pt;
+}
+DIV.MajorSectionPrint
+{
+    BACKGROUND: LightGrey;
+    MARGIN-BOTTOM: 3pt;
+    MARGIN-TOP: 0pt;
+    PADDING-BOTTOM: 3pt;
+    PADDING-LEFT: 3pt;
+    PADDING-RIGHT: 3pt;
+    PADDING-TOP: 3pt;
+}
+DIV.Supplement
+{
+    BACKGROUND: #EEFFFF;
+    COLOR: black;
+    DISPLAY: block;
+    MARGIN: 3pt 0pt;
+    PADDING-BOTTOM: 6pt;
+    PADDING-LEFT: 6pt;
+    PADDING-RIGHT: 6pt;
+    PADDING-TOP: 6pt;
+}
+DIV.SupplementEl
+{
+	FONT-SIZE: 180%;
+	FONT-WEIGHT: BOLD;
+	BORDER-STYLE: SOLID;
+	BORDER-WIDTH: 5px
+	MARGIN-RIGHT: AUTO;
+	MARGIN-LEFT: AUTO;
+	WIDTH: 60%;
+    BACKGROUND: LightSteelBlue;
+    COLOR: black;
+    DISPLAY: block;
+    MARGIN: 3pt 0pt;
+    PADDING-BOTTOM: 6pt;
+    PADDING-LEFT: 6pt;
+    PADDING-RIGHT: 6pt;
+    PADDING-TOP: 6pt;
+}
+DIV.SupplementContainer
+{
+	TEXT-ALIGN: CENTER;
+}
+DIV.GraphicHeader
+{
+    BACKGROUND: #FFFFFF;
+    MARGIN-TOP: 6pt;
+}
+DIV.DeadLink
+{
+    FONT-STYLE: italic;
+}
+SPAN.DeadLink
+{
+    FONT-STYLE: italic;
+}
+DIV.CROSSREF
+{
+    BACKGROUND: red;
+    COLOR: lightblue;
+}
+DIV.Indent
+{
+    DISPLAY: block;
+    MARGIN-TOP: 0pt;
+    MARGIN-BOTTOM: -1pt;
+    MARGIN-LEFT: +10pt;
+}
+.AcgmHorizontalDiv
+{
+    DISPLAY: block;
+    MARGIN-TOP: 4pt;
+    MARGIN-BOTTOM: 0pt;
+}
+
+.StdHeader
+{
+    BACKGROUND-COLOR: LightSteelBlue;
+    COLOR: #0000cc;
+    FONT-FAMILY: Verdana,sans-serif;
+    MARGIN-BOTTOM: 0pt;
+    MARGIN-TOP: 0pt;
+}
+.TightHeader
+{
+    BACKGROUND-COLOR: LightSteelBlue;
+    COLOR: #0000cc;
+    FONT-FAMILY: Verdana,sans-serif;
+    MARGIN-BOTTOM: -3pt;
+    MARGIN-TOP: -3pt;
+}
+.SuperSuperTight
+{
+    BACKGROUND-COLOR: LightSteelBlue;
+    COLOR: #0000cc;
+    FONT-FAMILY: Verdana,sans-serif;
+    MARGIN-BOTTOM: -6pt;
+    MARGIN-TOP:-6px;
+        padding-top:0px;
+}
+FONT.labels
+{
+    FONT-FAMILY: Verdana,sans-serif;
+    FONT-SIZE: larger;
+    FONT-WEIGHT: bolder;
+}
+INPUT.headButtons
+{
+    BACKGROUND-COLOR: #CCCCCC;
+    BORDER-BOTTOM: white thin outset;
+    BORDER-LEFT: white thin outset;
+    BORDER-RIGHT: white thin outset;
+    BORDER-TOP: white thin outset;
+    FONT-FAMILY: Trebuchet MS, sans-serif;
+    COLOR: #336699;
+    CURSOR: hand;
+    FONT-SIZE: xx-small;
+    FONT-WEIGHT: bolder;
+    HEIGHT: 13.5pt;
+    TEXT-ALIGN: center;
+    WIDTH: 45pt;
+    text-valign: center;
+}
+INPUT.headButtonsWide
+{
+    BACKGROUND-COLOR: #CCCCCC;
+    BORDER-BOTTOM: white thin outset;
+    BORDER-LEFT: white thin outset;
+    BORDER-RIGHT: white thin outset;
+    BORDER-TOP: white thin outset;
+    FONT-FAMILY: Trebuchet MS, sans-serif;
+    COLOR: #336699;
+    CURSOR: hand;
+    FONT-SIZE: xx-small;
+    FONT-WEIGHT: bolder;
+    HEIGHT: 13.5pt;
+    TEXT-ALIGN: center;
+    WIDTH: 65pt;
+    text-valign: center;
+}
+INPUT.AcgmHorizontalButtons
+{
+    BACKGROUND-COLOR: #CCCCCC;
+    BORDER-BOTTOM: white thin outset;
+    BORDER-LEFT: white thin outset;
+    BORDER-RIGHT: white thin outset;
+    BORDER-TOP: white thin outset;
+    FONT-FAMILY: Trebuchet MS, sans-serif;
+    COLOR: #336699;
+    CURSOR: hand;
+    FONT-SIZE: xx-small;
+    FONT-WEIGHT: bolder;
+    HEIGHT: 14pt;
+    TEXT-ALIGN: center;
+    WIDTH: 50pt;
+    text-valign: center;
+}
+INPUT.general
+{
+    CURSOR: hand;
+    TEXT-ALIGN: center;
+    text-valign: center;
+    FONT-FAMILY: Verdana,sans-serif;
+}
+
+TABLE.MainTable
+{
+        background-color: LightSteelBlue;
+        MARGIN-BOTTOM: 6pt;
+        MARGIN-TOP: 0pt;
+}
+TABLE.Empty
+{
+        background-color: white;
+        margin-top: 0pt;
+}
+/* Edit this to change the style of the Manual Name in the
+    upper left hand frame. */
+.clsManualName
+{
+        font-family:sans-serif;
+        font-weight:bolder;
+        font-size:15;
+    text-align: center;
+        color: LightGrey;
+        filter:glow(color=#6666CC,strength=1,enabled=1), dropshadow(color=gray,offx=1,offy=1,enabled=1);
+}
+
+/* PREVIOUS_PAGE and NEXT_PAGE labels. */
+.paging {
+    font-family: Verdana,sans-serif;
+    font-size: larger;
+    font-weight:bolder;
+    text-align:left;
+        margin-top: 6pt;
+        margin-bottom: 6pt;
+}
+
+/* The text will not be displayed - used for hiding numbering in split fragments. */
+.hide {
+    display:none;
+}
+
+/* The list item (bullets, numbers) will not be displayed. */
+li.hidden {
+    list-style:none;
+}
+/* EA-LOOKUP Pre and Post Text. */
+.EALookup {
+        color:blue;
+    font-size:10pt;
+    font-weight:bold;
+}
