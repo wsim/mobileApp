@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+This ANT build does a simple copy of resource files into a TOMCAT deployment directory. 
+-->	
+
+<project name="mIETPv4_web_deployment" default="default">
+	<property environment="env"/>
+
+	
+	<property name="app.tomcat.root" value="\\192.168.5.125\Apps\IETP_TABLET\www"/>
+	<property name="source.webapp.root" value="."/>
+	
+
+	
+	
+	<target name="default">
+		<copy todir="${app.tomcat.root}" verbose="true">
+			<fileset dir="${source.webapp.root}">
+    			<exclude name="**/.svn/**"/>
+                <exclude name="**/.idea/**"/>
+			</fileset>
+		</copy>
+    </target>
+</project>
